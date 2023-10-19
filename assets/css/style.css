@@ -1,0 +1,129 @@
+* {
+	font-family: "Raleway", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #000;
+	color: #fdfdfd;
+	text-align: center;
+}
+p {
+	font-size: 16px;
+}
+
+h2 {
+	letter-spacing: 0.19em;
+	text-transform: uppercase;
+	color: #33a8db;
+}
+a {
+	text-decoration: none;
+	color: #33a8db;
+}
+
+.banner {
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-bottom: 1px solid #33a8db;
+	padding: 2rem;
+
+	background-image: url("../images/banner.png"),
+		linear-gradient(0, #000 0%, #0b2430 50%, #000 100%);
+}
+.banner-content,
+#course-content,
+.modules-list,
+#professional-challenges,
+footer {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin: 0 auto;
+	align-items: center;
+}
+.banner-content {
+	align-items: center;
+	max-width: 500px;
+}
+.banner h1 {
+	background: linear-gradient(180deg, #33a8db 0%, #1472b7 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 40px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.banner button {
+	background-color: #00000000;
+	border: 2px solid #fdfdfd;
+	border-image-slice: 10;
+	border-image-source: linear-gradient(180deg, #33a8db 0%, #1472b7 100%);
+	border-radius: 0.5rem;
+	color: #33a8db;
+	font-size: 16px;
+	font-weight: 900;
+	letter-spacing: 0.21em;
+	padding: 1rem;
+	text-transform: uppercase;
+	width: 300px;
+}
+#course-content {
+	padding: 4rem;
+	width: 600px;
+	max-width: calc(100% - 20px);
+}
+
+.module {
+	background-color: #222;
+	padding: 1rem;
+	border: 2px solid #fdfdfd;
+	border-image-slice: 10;
+	border-image-source: linear-gradient(180deg, #33a8db 0%, #1472b7 100%);
+	box-shadow: inset 0px 10px 27px -1px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: inset 0px 10px 27px -1px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: inset 0px 10px 27px -1px rgba(0, 0, 0, 0.4);
+}
+.module span {
+	color: #33a8db;
+}
+
+#transform-world {
+	padding: 5rem 15rem;
+	text-align: left;
+	background-image: url("../images/woman-code.png");
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#transform-world p {
+	font-size: 36px;
+	font-weight: 900;
+	text-shadow: 3px 3px #33a8db;
+	width: 250px;
+}
+
+#professional-challenges {
+	padding: 4rem;
+	width: 600px;
+	max-width: calc(100% - 20px);
+}
+
+footer {
+	min-height: 10rem;
+	background: linear-gradient(0, #0b2430, #000);
+	border-top: 1px solid #33a8db;
+	justify-content: center;
+	gap: 0.7rem;
+}
+
+@media (max-width: 576px) {
+	#prof-img {
+		width: calc(100% + 6rem);
+	}
+	#transform-world {
+		padding: 3rem;
+	}
+}
