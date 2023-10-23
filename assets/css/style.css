@@ -77,14 +77,15 @@ footer {
 }
 
 .module {
-	background-color: #222;
 	padding: 1rem;
-	border: 2px solid #fdfdfd;
-	border-image-slice: 10;
-	border-image-source: linear-gradient(180deg, #33a8db 0%, #1472b7 100%);
+	border: 2px solid transparent;
 	box-shadow: inset 0px 10px 27px -1px rgba(0, 0, 0, 0.4);
-	-webkit-box-shadow: inset 0px 10px 27px -1px rgba(0, 0, 0, 0.4);
-	-moz-box-shadow: inset 0px 10px 27px -1px rgba(0, 0, 0, 0.4);
+	background-image: linear-gradient(#333, #333),
+		linear-gradient(180deg, #33a8db 0%, #1472b7 100%);
+	background-origin: border-box;
+	background-clip: padding-box, border-box;
+	border-radius: 2rem;
+	width: 100%;
 }
 .module span {
 	color: #33a8db;
